@@ -17,7 +17,7 @@ export function RecordsList(props) {
     <Text>
       {props.records.map((record) => (
         <Record key={record.id} {...record} />
-      ))}
+      )) ?? <Text>No records</Text>}
     </Text>
   );
 }
